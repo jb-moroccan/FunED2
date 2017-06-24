@@ -4,34 +4,35 @@
     android:layout_height="match_parent">
 
     <RadioGroup
+        android:id="@+id/categories"
         android:layout_width="wrap_content"
         android:layout_height="287dp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/english"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="English" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/math"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Math" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/history"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="History" />
 
         <RadioButton
-            android:id="@+id/radioButton7"
+            android:id="@+id/science"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -40,12 +41,21 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose a Category"
-        android:textSize="30sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="32dp"
+        android:text="Choose a Category"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:text="Go" />
 </RelativeLayout>
