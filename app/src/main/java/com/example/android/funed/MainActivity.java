@@ -10,4 +10,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    public int getGrade()
+    {
+        int gradelevel = 0;
+
+        return gradelevel;
+    }
 }
