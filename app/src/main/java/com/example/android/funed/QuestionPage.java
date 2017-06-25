@@ -96,6 +96,9 @@ public class QuestionPage extends AppCompatActivity {
             RadioButton answerFourHist = (RadioButton) findViewById(R.id.choice4);
             answerFourHist.setText(questionAsking.getAnswerChoice4());
 
+            TextView difficultyTxt = (TextView) findViewById(R.id.difficulty);
+            difficultyTxt.setText("Difficulty: " + questionAsking.getDifficultyLevel());
+
             questionAnswer = questionAsking.getAnswer();
 
         } finally {

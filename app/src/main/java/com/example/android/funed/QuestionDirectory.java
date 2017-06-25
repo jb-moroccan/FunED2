@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 /**
  * Created by Jenna on 6/24/2017.
@@ -68,9 +69,21 @@ public class QuestionDirectory extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent();
-                intent.setClass(QuestionDirectory.this, QuestionPage.class);
-                startActivity(intent);
+                math = (RadioButton) findViewById(R.id.math);
+                english = (RadioButton) findViewById(R.id.english);
+                technology = (RadioButton) findViewById(R.id.technology);
+                history = (RadioButton) findViewById(R.id.history);
+
+                if(!math.isChecked() && !english.isChecked() && !technology.isChecked() && !history.isChecked())
+                {
+                    Toast.makeText(QuestionDirectory.this, "No category selected. Please Try Again", Toast.LENGTH_LONG).show();
+                }
+                else
+                {
+                    Intent intent = new Intent();
+                    intent.setClass(QuestionDirectory.this, QuestionPage.class);
+                    startActivity(intent);
+                }
             }
         });
     }
