@@ -38,7 +38,6 @@ public class QuestionDirectory extends AppCompatActivity {
 
         radioGroup = (RadioGroup) findViewById(R.id.categories);
 
-
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
             @Override
@@ -53,7 +52,7 @@ public class QuestionDirectory extends AppCompatActivity {
                 {
                     category = MATH;
                 }
-                else if (rb.getText().equals("History/Current Events"))
+                else if (rb.getText().equals("History/Geography"))
                 {
                     category = HISTORY;
                 }

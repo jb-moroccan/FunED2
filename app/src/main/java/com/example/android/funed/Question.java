@@ -1,10 +1,12 @@
 package com.example.android.funed;
 
 import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
 /* Created by Jenna on 6/24/2017. */
 
 public class Question extends RealmObject {
+    @PrimaryKey
     private int id;
     private String question;
     private String answer;

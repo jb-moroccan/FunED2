@@ -3,6 +3,15 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backButton"
+        android:layout_alignLeft="@+id/backButton"
+        android:layout_alignStart="@+id/backButton"
+        android:text="Submit" />
+
     <RadioGroup
         android:id="@+id/answerChoices"
         android:layout_width="wrap_content"
@@ -46,14 +55,13 @@
         android:id="@+id/categoryName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
-        android:text="CategoryName"
-        android:textSize="24sp"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="19dp"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/Question"
@@ -65,7 +73,6 @@
         android:layout_marginTop="23dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="Question"
         android:textSize="18sp" />
 
     <Button

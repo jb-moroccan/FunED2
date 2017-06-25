@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">FunED</string>
+
+    <string name="categoryHist">History/Geography</string>
+    <string name="categoryEng">English</string>
+    <string name="categoryTech">Science/Technology</string>
+    <string name="categoryMath">Math</string>
+
+
 //history
     <string name="historyq1">What is the name of the capital of the state of Ohio?</string>
     <string name="historya1">Columbus</string>
