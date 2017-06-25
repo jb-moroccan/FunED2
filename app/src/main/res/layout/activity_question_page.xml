@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ed872d"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/difficulty"
@@ -11,19 +13,27 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/Question"
         android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="Difficulty"
-        android:textSize="18sp" />
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="italic" />
 
     <Button
         android:id="@+id/submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/backButton"
+        android:layout_alignBottom="@+id/answerChoices"
         android:layout_alignLeft="@+id/backButton"
         android:layout_alignStart="@+id/backButton"
-        android:text="Submit" />
+        android:background="#7f3e98"
+        android:fontFamily="sans-serif"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <RadioGroup
         android:id="@+id/answerChoices"
@@ -39,28 +49,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Answer Choice 1" />
+            android:fontFamily="sans-serif"
+            android:text="Answer Choice 1"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/choice2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Answer Choice 2" />
+            android:fontFamily="sans-serif"
+            android:text="Answer Choice 2"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/choice3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Answer Choice 3" />
+            android:fontFamily="sans-serif"
+            android:text="Answer Choice 3"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/choice4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Answer Choice 4" />
+            android:fontFamily="sans-serif"
+            android:text="Answer Choice 4"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </RadioGroup>
 
@@ -74,8 +100,11 @@
         android:layout_marginLeft="28dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="19dp"
+        android:fontFamily="sans-serif"
         android:text="Category"
-        android:textSize="24sp" />
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/Question"
@@ -85,10 +114,12 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/categoryName"
         android:layout_marginTop="23dp"
+        android:fontFamily="sans-serif"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="Question"
-        android:textSize="18sp" />
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/backButton"
@@ -100,5 +131,10 @@
         android:layout_marginBottom="12dp"
         android:layout_marginEnd="13dp"
         android:layout_marginRight="13dp"
-        android:text="Back" />
+        android:background="#7f3e98"
+        android:fontFamily="sans-serif"
+        android:text="Back"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 </RelativeLayout>

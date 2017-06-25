@@ -83,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
         final Question historyQ3 = new Question();
         historyQ3.setId(3);
         historyQ3.setQuestion(getString(R.string.historyq3));
-        ;
         historyQ3.setAnswer(getString(R.string.historya3));
         historyQ3.setAnswerChoice1(getString(R.string.historychoiceq3a));
         historyQ3.setAnswerChoice2(getString(R.string.historychoiceq3b));

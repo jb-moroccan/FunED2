@@ -1,42 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7f3e98"
+    android:orientation="vertical">
 
     <RadioGroup
         android:id="@+id/categories"
         android:layout_width="wrap_content"
         android:layout_height="287dp"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true">
+        android:layout_centerVertical="true"
+        android:background="#7f3e98"
+        android:transitionGroup="true">
 
         <RadioButton
             android:id="@+id/english"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="English" />
+            android:fontFamily="sans-serif"
+            android:text="English"
+            android:textColor="#ff033e"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/math"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Math" />
+            android:fontFamily="sans-serif"
+            android:text="Math"
+            android:textColor="#318ce7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/history"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="History/Geography" />
+            android:fontFamily="sans-serif"
+            android:text="History/Geography"
+            android:textColor="#00ff00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/technology"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Science/Technology" />
+            android:fontFamily="sans-serif"
+            android:text="Science/Technology"
+            android:textColor="#ED872D"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </RadioGroup>
 
@@ -47,8 +68,12 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
+        android:background="#ed872d"
+        android:fontFamily="sans-serif"
         android:text="Choose a Category"
-        android:textSize="30sp" />
+        android:textColor="#00ff00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/go"
@@ -57,5 +82,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="22dp"
-        android:text="Go" />
+        android:background="#ed872d"
+        android:fontFamily="sans-serif"
+        android:text="Go"
+        android:textColor="#00ff00"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 </RelativeLayout>
