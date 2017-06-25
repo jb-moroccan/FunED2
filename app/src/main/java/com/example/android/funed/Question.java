@@ -5,6 +5,7 @@ import io.realm.RealmObject;
 /* Created by Jenna on 6/24/2017. */
 
 public class Question extends RealmObject {
+    private int id;
     private String question;
     private String answer;
     private String answerChoice1;
@@ -12,7 +13,15 @@ public class Question extends RealmObject {
     private String answerChoice3;
     private String answerChoice4;
     private int questionCategory;
-    private int gradeLevel;
+    private String difficultyLevel;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int couponId) {
+        this.id = couponId;
+    }
 
     public String getQuestion(){ return question; }
 
@@ -54,8 +63,8 @@ public class Question extends RealmObject {
 
     public void setQuestionCategory(int questionCategory) {this.questionCategory = questionCategory;}
 
-    public int getGradeLevel(){ return gradeLevel; }
+    public String getDifficultyLevel(){ return difficultyLevel; }
 
-    public void setGradeLevel(int gradeLevel) {this.gradeLevel = gradeLevel;}
+    public void setDifficultyLevel(String difficultyLevel) {this.difficultyLevel = difficultyLevel;}
 }
 

@@ -18,15 +18,6 @@
         </activity>
 
         <activity
-            android:name=".Grade"
-            android:label="FunED"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-
-        <activity
             android:name=".QuestionDirectory"
             android:label="FunED"
             android:parentActivityName=".MainActivity">

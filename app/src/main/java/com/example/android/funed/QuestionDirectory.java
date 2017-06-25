@@ -36,7 +36,8 @@ public class QuestionDirectory extends AppCompatActivity {
         history = (RadioButton) findViewById(R.id.history);
         technology = (RadioButton) findViewById(R.id.technology);
 
-        radioGroup = (RadioGroup) findViewById(R.id.grades);
+        radioGroup = (RadioGroup) findViewById(R.id.categories);
+
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
