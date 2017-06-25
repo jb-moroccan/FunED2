@@ -1,3 +1,88 @@
 <resources>
     <string name="app_name">FunED</string>
+//history
+    <string name="historyq1">What is the name of the capital of the state of Ohio?</string>
+    <string name="historya1">Columbus</string>
+    <string name="historychoiceq1a">Cincinnati</string>
+    <string name="historychoiceq1b">Cleveland</string>
+    <string name="historychoiceq1c">Columbus</string>
+    <string name="historychoiceq1d">Sandusky</string>
+
+    <string name="historyq2">What is the name of the capital of the state of Nevada?</string>
+    <string name="historya2">Carson City</string>
+    <string name="historychoiceq2a">Carson City</string>
+    <string name="historychoiceq2b">Renlo</string>
+    <string name="historychoiceq2c">Las Vegas</string>
+    <string name="historychoiceq2d">Sparks</string>
+
+    <string name="historyq3">What is the name of the capital of the state of Michigan?</string>
+    <string name="historya3">Lansing</string>
+    <string name="historychoiceq3a">Grand Rapids</string>
+    <string name="historychoiceq3b">Lansing</string>
+    <string name="historychoiceq3c">Kalamazoo</string>
+    <string name="historychoiceq3d">Detroit</string>
+//english
+    <string name="englishq1">What is the adjective in this sentence: "The orange fox jumped over the log."?</string>
+    <string name="englisha1">Orange</string>
+    <string name="englishchoiceq1a">Fox</string>
+    <string name="englishchoiceq1b">Orange</string>
+    <string name="englishchoiceq1c">Over</string>
+    <string name="englishchoiceq1d">Log</string>
+
+    <string name="englishq2">What is the interjection in this sentence: "Wow, that is a great idea!"?</string>
+    <string name="englisha2">Wow</string>
+    <string name="englishchoiceq2a">Wow</string>
+    <string name="englishchoiceq2b">Great</string>
+    <string name="englishchoiceq2c">That</string>
+    <string name="englishchoiceq2d">Idea</string>
+
+    <string name="englishq3">What is the preposition in this sentence: "The group worked toward solving the problem."?</string>
+    <string name="englisha3">Toward</string>
+    <string name="englishchoiceq3a">Problem</string>
+    <string name="englishchoiceq3b">The</string>
+    <string name="englishchoiceq3c">Solving</string>
+    <string name="englishchoiceq3d">Toward</string>
+//math
+    <string name="mathq1">What is 5 cubed?</string>
+    <string name="matha1">125</string>
+    <string name="mathchoiceq1a">225</string>
+    <string name="mathchoiceq1b">25</string>
+    <string name="mathchoiceq1c">125</string>
+    <string name="mathchoiceq1d">150</string>
+
+    <string name="mathq2">What is 10 to the 4th power?</string>
+    <string name="matha2">10,000</string>
+    <string name="mathchoiceq2a">0.0001</string>
+    <string name="mathchoiceq2b">1,000</string>
+    <string name="mathchoiceq2c">10,000</string>
+    <string name="mathchoiceq2d">100,000</string>
+
+    <string name="mathq3">What is two to the eighth power?</string>
+    <string name="matha3">256</string>
+    <string name="mathchoiceq3a">256</string>
+    <string name="mathchoiceq3b">64</string>
+    <string name="mathchoiceq3c">876</string>
+    <string name="mathchoiceq3d">164</string>
+//science
+    <string name="scienceq1">What organelle is known as the powerhouse of the cell?</string>
+    <string name="sciencea1">Mitochondria</string>
+    <string name="sciencechoiceq1a">Mitochondria</string>
+    <string name="sciencechoiceq1b">Endoplasmic reticulum</string>
+    <string name="sciencechoiceq1c">Plasma membrane</string>
+    <string name="sciencechoiceq1d">Cytoskeletal filaments</string>
+
+    <string name="scienceq2">What organelle functions to package and deliver proteins?</string>
+    <string name="sciencea2">Golgi body</string>
+    <string name="sciencechoiceq2a">Perioxisome</string>
+    <string name="sciencechoiceq2b">Nucleus</string>
+    <string name="sciencechoiceq2c">Cytosol</string>
+    <string name="sciencechoiceq2d">Golgi body</string>
+
+    <string name="scienceq3">What structure is directly responsible for the formation of proteins within the cell?</string>
+    <string name="sciencea3">Ribosome</string>
+    <string name="sciencechoiceq3a">Ribosome</string>
+    <string name="sciencechoiceq3b">Nucleolus</string>
+    <string name="sciencechoiceq3c">Centriole</string>
+    <string name="sciencechoiceq3d">Vacuole</string>
+
 </resources>
