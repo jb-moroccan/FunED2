@@ -29,14 +29,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="History" />
+            android:text="History/Geography" />
 
         <RadioButton
-            android:id="@+id/science"
+            android:id="@+id/technology"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Science" />
+            android:text="Science/Technology" />
 
     </RadioGroup>
 
