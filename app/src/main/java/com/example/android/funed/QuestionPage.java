@@ -35,6 +35,8 @@ public class QuestionPage extends AppCompatActivity {
     private int idNumQ;
     private String questionAnswer;
 
+    public static int numCorrect;
+    public static int numIncorrect;
     Realm realm;
     Question questionAsking;
 
@@ -42,6 +44,10 @@ public class QuestionPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_page);
+        TextView numCorrectTxt = (TextView) findViewById(R.id.numCorrect);
+        numCorrectTxt.setText("Number Correct: " + numCorrect);
+        TextView numIncorrectTxt = (TextView) findViewById(R.id.numIncorrect);
+        numIncorrectTxt.setText("Number Incorrect: " + numIncorrect);
 
         //Get what type of category it is. Generate random int # based on category: history 1-3, eng 4-6, tech 7-9, math 10-12.
         //Get question from realm that corresponds to the id number of the question based on random num.
@@ -119,10 +125,16 @@ public class QuestionPage extends AppCompatActivity {
                     if(ac1.getText().equals(questionAnswer))
                     {
                         Toast.makeText(QuestionPage.this, "Correct!", Toast.LENGTH_SHORT).show();
+                        numCorrect++;
+                        TextView numCorrectTxt = (TextView) findViewById(R.id.numCorrect);
+                        numCorrectTxt.setText("Number Correct: " + numCorrect);
                     }
                     else
                     {
-                        Toast.makeText(QuestionPage.this, "Incorrect!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(QuestionPage.this, "Incorrect, try again!", Toast.LENGTH_SHORT).show();
+                        numIncorrect++;
+                        TextView numIncorrectTxt = (TextView) findViewById(R.id.numIncorrect);
+                        numIncorrectTxt.setText("Number Incorrect: " + numIncorrect);
                     }
                 }
                 else if (ac2.isChecked()==true)
@@ -130,10 +142,16 @@ public class QuestionPage extends AppCompatActivity {
                     if(ac2.getText().equals(questionAnswer))
                     {
                         Toast.makeText(QuestionPage.this, "Correct!", Toast.LENGTH_SHORT).show();
+                        numCorrect++;
+                        TextView numCorrectTxt = (TextView) findViewById(R.id.numCorrect);
+                        numCorrectTxt.setText("Number Correct: " + numCorrect);
                     }
                     else
                     {
-                        Toast.makeText(QuestionPage.this, "Incorrect!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(QuestionPage.this, "Incorrect, try again!", Toast.LENGTH_SHORT).show();
+                        numIncorrect++;
+                        TextView numIncorrectTxt = (TextView) findViewById(R.id.numIncorrect);
+                        numIncorrectTxt.setText("Number Incorrect: " + numIncorrect);
                     }
                 }
                 else if (ac3.isChecked()==true)
@@ -141,10 +159,16 @@ public class QuestionPage extends AppCompatActivity {
                     if(ac3.getText().equals(questionAnswer))
                     {
                         Toast.makeText(QuestionPage.this, "Correct!", Toast.LENGTH_SHORT).show();
+                        numCorrect++;
+                        TextView numCorrectTxt = (TextView) findViewById(R.id.numCorrect);
+                        numCorrectTxt.setText("Number Correct: " + numCorrect);
                     }
                     else
                     {
-                        Toast.makeText(QuestionPage.this, "Incorrect!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(QuestionPage.this, "Incorrect, try again!", Toast.LENGTH_SHORT).show();
+                        numIncorrect++;
+                        TextView numIncorrectTxt = (TextView) findViewById(R.id.numIncorrect);
+                        numIncorrectTxt.setText("Number Incorrect: " + numIncorrect);
                     }
                 }
                 else if (ac4.isChecked()==true)
@@ -152,10 +176,16 @@ public class QuestionPage extends AppCompatActivity {
                     if(ac4.getText().equals(questionAnswer))
                     {
                         Toast.makeText(QuestionPage.this, "Correct!", Toast.LENGTH_SHORT).show();
+                        numCorrect++;
+                        TextView numCorrectTxt = (TextView) findViewById(R.id.numCorrect);
+                        numCorrectTxt.setText("Number Correct: " + numCorrect);
                     }
                     else
                     {
-                        Toast.makeText(QuestionPage.this, "Incorrect!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(QuestionPage.this, "Incorrect, try again!", Toast.LENGTH_SHORT).show();
+                        numIncorrect++;
+                        TextView numIncorrectTxt = (TextView) findViewById(R.id.numIncorrect);
+                        numIncorrectTxt.setText("Number Incorrect: " + numIncorrect);
                     }
                 }
                 else

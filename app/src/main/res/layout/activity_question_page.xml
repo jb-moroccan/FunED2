@@ -2,8 +2,20 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#ed872d"
     android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/numIncorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/backButton"
+        android:layout_alignLeft="@+id/numCorrect"
+        android:layout_alignStart="@+id/numCorrect"
+        android:text="Number Incorrect:"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/difficulty"
@@ -115,8 +127,8 @@
         android:layout_below="@+id/categoryName"
         android:layout_marginTop="23dp"
         android:fontFamily="sans-serif"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:text="Question"
         android:textColor="#ffffff"
         android:textSize="24sp" />
@@ -137,4 +149,29 @@
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/androidguy"
+
+        android:layout_alignLeft="@+id/submitButton"
+        android:layout_alignStart="@+id/submitButton"
+        android:layout_alignRight="@+id/submitButton"
+        android:layout_alignEnd="@+id/submitButton"
+        android:layout_alignBottom="@+id/backButton"
+        android:layout_alignTop="@+id/answerChoices" />
+
+    <TextView
+        android:id="@+id/numCorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number Correct:"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/backButton"
+        android:layout_alignLeft="@+id/answerChoices"
+        android:layout_alignStart="@+id/answerChoices" />
+
 </RelativeLayout>

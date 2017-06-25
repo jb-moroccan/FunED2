@@ -41,6 +41,16 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
             }
         });
+
+        Button clickHereButton = (Button) findViewById(R.id.clickHereButton);
+        clickHereButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, Help.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void addNewQuestions() {
